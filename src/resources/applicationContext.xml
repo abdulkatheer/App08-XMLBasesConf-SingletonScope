@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--Default scope is singleton -->
+    <bean id="redminote7pro" class="beans.Mobile">
+        <property name="brand" value="Xiaomi-Redmi"/>
+        <property name="model" value="Note 7 Pro"/>
+        <property name="year" value="2019"/>
+        <property name="os" value="Android Pie"/>
+        <property name="internal" value="64GB"/>
+        <property name="ram" value="4GB"/>
+    </bean>
+
+    <!--We can also specify singleton scope explicitly-->
+    <bean id="honor8lite" class="beans.Mobile" scope="singleton">
+        <property name="brand" value="Honor"/>
+        <property name="model" value="8 Lite"/>
+        <property name="year" value="2018"/>
+        <property name="os" value="Android Oreo"/>
+        <property name="internal" value="64GB"/>
+        <property name="ram" value="4GB"/>
+    </bean>
+</beans>
